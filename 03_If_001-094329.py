@@ -1,5 +1,5 @@
 def insertionSort(x):
-    for i in range(len(x)):
+    for i in range(1, len(x)):
         temp = x[i]
         j = i - 1
         while j >= 0 and x[j] > temp:
