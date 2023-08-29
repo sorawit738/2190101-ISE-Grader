@@ -67,3 +67,20 @@ def quickSort(x, p, r):
         q = partition(x, p, r)
         quickSort(x, p, q - 1)
         quickSort(x, q + 1, r)
+
+def binarySearch(nums, target):
+    if len(nums) == 0:
+        return -1
+    min = 0
+    max = len(nums) - 1
+
+    while min <= max:
+        mid = min + (max - min) // 2
+        value = nums[mid]
+        if(value == target):
+            return mid
+        elif value > target:
+            max = mid - 1
+        else:
+            min = mid + 1
+    return -1
