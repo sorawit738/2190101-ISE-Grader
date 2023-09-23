@@ -7,8 +7,8 @@ def check_digit(a):
     i -= 1
     a = int(a/10)
 
-  result = ((11)-(13*digits[0]+12*digits[1]+11*digits[2]+10*digits[3]+9*digits[4]+8*digits[5]+7*digits[6]+6*digits[7]+5*digits[8]+4*+digits[9]+3*digits[10]+2*digits[11]) % 11) % 10;
-  digits[12] = result;
+  result = ((11)-(13*digits[0]+12*digits[1]+11*digits[2]+10*digits[3]+9*digits[4]+8*digits[5]+7*digits[6]+6*digits[7]+5*digits[8]+4*+digits[9]+3*digits[10]+2*digits[11]) % 11) % 10
+  digits[12] = result
   
   return digits
 
